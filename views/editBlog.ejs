@@ -1,0 +1,17 @@
+<%- include('header.ejs',{title:  "Edit Blog"}) %>
+
+<form action="/blogs/<%= id %>" method="post">
+    <div class="mb-1 submit-div">
+        <p>Title:</p>
+        <textarea name="title" class="form-control submit-title" aria-label="With textarea"><%= title %></textarea>
+    </div>
+    <div class="mb-1 submit-div">
+        <p>Subject:</p>
+        <textarea name="content" class="form-control submit-content" aria-label="With textarea"><%= content %></textarea>
+      </div>
+      <div class="submit-div">
+        <input type = "Submit" class="btn btn-primary">
+      </div>
+</form>
+
+<%- include('footer.ejs') %>

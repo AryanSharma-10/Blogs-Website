@@ -1,0 +1,25 @@
+<%- include('header.ejs',{title: "Your Blogs"}) %>
+
+<ul>
+    <% for (let i = blogs.length - 1 ; i >= 0 ; i--){ %>
+        <div class = "blogs-div">
+            <li class = "blog-title"><%= blogs[i]["title"] %></li>
+            <p class = "blog-content"><%= blogs[i]["content"] %></p> 
+            
+            <!-- <form action="/delete-post/<%= i %>" class="blog-option-form" method="Post">
+                <input type = "submit" value="❌" class="btn btn-primary blog-option-btn">
+            </form>
+            <form action="/blogs/<%= i %>" class="blog-option-form" method="get">
+                <input type = "submit" value="✏️" class="btn btn-primary blog-option-btn">
+            </form> -->
+
+            <a class="delete" href="/blogs/<%= blogs[i].id %>">Edit</a>
+            <a class="edit" href="/blogs/delete/<%= blogs[i].id %>">Delete</a>
+
+        </div>
+            
+
+        <% } %>
+</ul>
+    
+<%- include('footer.ejs') %>

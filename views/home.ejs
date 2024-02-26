@@ -1,0 +1,17 @@
+
+
+<%- include('header.ejs',{title: "Home"}) %>
+<div>
+    <ul>
+        <% for (let i = 0 ; i < blogs.length ; i++){ %>
+            <div class = "blogs-div">
+                <li class = "blog-title"><%= blogs[i]["title"] %></li>
+                <p class = "blog-content"><%= blogs[i]["content"] %></p>   
+    
+            </div>
+                
+    
+            <% } %>
+    </ul>
+</div>
+<%- include('footer.ejs') %>

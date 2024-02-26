@@ -1,0 +1,89 @@
+body{
+    background-color: #A0E9FF;
+    color: #22092C;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+h1{
+    font-family: 'Honk', system-ui;
+    font-size: 10rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* .footer {
+    position: absolute;
+    left: 43%;
+    bottom: 1rem;
+} */
+
+.blog-title{
+    font-size: 2rem;
+}
+
+.title-heading{
+    margin: 3rem 10rem 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.custom-nav {
+    background-color: #F5E8C7;
+}
+
+.custom-navbar-brand{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.custom-nav-items-div{
+    position: absolute;
+    right: 3rem;
+}
+
+.custom-nav-items{
+    margin: 0 0.5rem;
+}
+
+.submit-div{
+    margin: 1.5rem 0;
+}
+
+.submit-title{
+    width: 40%;
+    height: 4%;
+    display: inline;    
+}
+
+.submit-content{
+    width: 40%;
+    height: 40%;
+    display: inline;
+}
+
+.blog-option-form{
+    display: inline;
+    margin: 2rem 2rem;
+}
+
+.blog-option-btn{
+    padding: 0.2rem;
+}
+
+.blogs-div{
+    margin: 6rem 0 8rem;
+    padding: 0rem 20rem;
+}
+
+.blog-content{
+    margin: 0rem 0rem 5rem;
+}
